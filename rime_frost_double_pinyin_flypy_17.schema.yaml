@@ -14,7 +14,7 @@
 
 # 方案说明
 schema:
-  schema_id: rime_frost_double_pinyin_flypy
+  schema_id: rime_frost_double_pinyin_flypy_17
   name: 白霜小鹤双拼17键
   version: "1"
   author:
