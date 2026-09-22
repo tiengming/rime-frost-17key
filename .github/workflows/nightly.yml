@@ -3,7 +3,7 @@ name: nightly
 on:
   push:
     branches:
-      - master
+      - 17key
   workflow_dispatch:
 
 permissions:
