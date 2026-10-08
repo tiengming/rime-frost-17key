@@ -14,97 +14,113 @@ xime_index:
     - "https://raw.githubusercontent.com/ximeiorg/xime-index/refs/heads/main/"
 
 style:
-  color_scheme:
-    light: cyber_lumina
-    dark: midnight_iris
-  dark_mode: 2
+  color_scheme: starry_night_voyage
 
+# ══════════════════════════════════════════════════════════
+#  五套主题配色
+#  1. 星野夜航（当前使用，保持原样）
+#  2. Notion 极简
+#  3. Claude 暖砂
+#  4. Apple 原生
+#  5. Material You 动态
+# ══════════════════════════════════════════════════════════
 color_schemes:
-  # ── 1. Cyber Lumina (极光数字蓝 - 水滴毛玻璃版) ──
-  cyber_lumina:
-    name: "Cyber Lumina (Glass)"
-    primary_color: 0x6366F1
+  # ── 1. 星野夜航 ──
+  starry_night_voyage:
+    name: "星野夜航"
+    primary_color: 0x6D5BD0
     keyboard_background:
       type: gradient
-      colors: [0xE6EEF2FF, 0xB3F8FAFC]
-      colors_dark: [0xE60F172A, 0xB31E293B]
+      colors: [0xF0EEFB, 0xE3DFF7]
+      colors_dark: [0x0F0C1E, 0x191430]
       angle: 135
-      blur_radius: 24
+    key_bg_color: 0xFAF9FF
+    key_bg_color_dark: 0x27FFFFFF
+    key_text_color: 0x38305E
+    key_text_color_dark: 0xE3DEF7
+    candidate_text_color: 0x38305E
+    candidate_text_color_dark: 0xE3DEF7
 
-  # ── 2. Moss Sanctuary (苔原微光 - 水滴毛玻璃版) ──
-  moss_sanctuary:
-    name: "Moss Sanctuary (Glass)"
-    primary_color: 0x3B7A57
+  # ── 2. Notion 极简 ──
+  # 设计参考：Notion 的暖白背景 + 深墨文字 + Notion 蓝强调色
+  notion_style:
+    name: "Notion 极简"
+    primary_color: 0x2383E2
     keyboard_background:
       type: gradient
-      colors: [0xE6EDF5F0, 0xB3F6FAF7]
-      colors_dark: [0xE6121F17, 0xB31C2E23]
+      colors: [0xF7F7F5, 0xEFEFED]
+      colors_dark: [0x191919, 0x202020]
       angle: 135
-      blur_radius: 24
+    key_bg_color: 0xFFFFFF
+    key_bg_color_dark: 0x2F2F2F
+    key_text_color: 0x37352F
+    key_text_color_dark: 0xE9E9E7
+    candidate_text_color: 0x37352F
+    candidate_text_color_dark: 0xE9E9E7
 
-  # ── 3. Terracotta Dusk (陶土晚霞 - 水滴毛玻璃版) ──
-  terracotta_dusk:
-    name: "Terracotta Dusk (Glass)"
-    primary_color: 0xBF5B43
+  # ── 3. Claude 暖砂 ──
+  # 设计参考：Claude 官网的奶油底色 + 赤陶色强调 + 暖灰文字
+  claude_style:
+    name: "Claude 暖砂"
+    primary_color: 0xD97757
     keyboard_background:
       type: gradient
-      colors: [0xE6FAF0EC, 0xB3FFF5F0]
-      colors_dark: [0xE6241612, 0xB333201B]
+      colors: [0xF5F4EF, 0xEAE8E0]
+      colors_dark: [0x1F1E1D, 0x272624]
       angle: 135
-      blur_radius: 24
+    key_bg_color: 0xFFFFFF
+    key_bg_color_dark: 0x33322F
+    key_text_color: 0x3D3D3A
+    key_text_color_dark: 0xF5F4EF
+    candidate_text_color: 0x3D3D3A
+    candidate_text_color_dark: 0xF5F4EF
 
-  # ── 4. Glacial Mint (冰川凉苔 - 水滴毛玻璃版) ──
-  glacial_mint:
-    name: "Glacial Mint (Glass)"
-    primary_color: 0x0D9488
+  # ── 4. Apple 原生 ──
+  # 设计参考：iOS 系统键盘的浅灰底 + 纯白按键 + 系统蓝强调
+  apple_style:
+    name: "Apple 原生"
+    primary_color: 0x007AFF
     keyboard_background:
       type: gradient
-      colors: [0xE6E6F4F1, 0xB3F2FAF8]
-      colors_dark: [0xE6102220, 0xB319302D]
+      colors: [0xD4D6DC, 0xC7CAD2]
+      colors_dark: [0x1C1C1E, 0x121214]
       angle: 135
-      blur_radius: 24
+    key_bg_color: 0xFFFFFF
+    key_bg_color_dark: 0x363638
+    key_text_color: 0x000000
+    key_text_color_dark: 0xFFFFFF
+    candidate_text_color: 0x000000
+    candidate_text_color_dark: 0xFFFFFF
 
-  # ── 5. Solar Amber (琥珀日光 - 水滴毛玻璃版) ──
-  solar_amber:
-    name: "Solar Amber (Glass)"
-    primary_color: 0xD97706
+  # ── 5. Material You 动态 ──
+  # 设计参考：Material Design 3 基准调色板（紫罗兰），自动适配系统亮/暗模式
+  material_you:
+    name: "Material 动态"
+    primary_color: 0x6750A4
     keyboard_background:
       type: gradient
-      colors: [0xE6FFFBEB, 0xB3FFFAF0]
-      colors_dark: [0xE6241C10, 0xB3332818]
+      colors: [0xF3EDF7, 0xE8DEF8]
+      colors_dark: [0x1C1B1F, 0x211F26]
       angle: 135
-      blur_radius: 24
-
-  # ── 6. Midnight Iris (深夜鸢尾 - 水滴毛玻璃版) ──
-  midnight_iris:
-    name: "Midnight Iris (Glass)"
-    primary_color: 0x8B5CF6
-    keyboard_background:
-      type: gradient
-      colors: [0xE6F3E8FF, 0xB3FAF5FF]
-      colors_dark: [0xE61C1329, 0xB3271B38]
-      angle: 135
-      blur_radius: 24
+    key_bg_color: 0xFFFFFF
+    key_bg_color_dark: 0x2B2930
+    key_text_color: 0x1D1B20
+    key_text_color_dark: 0xE6E1E5
+    candidate_text_color: 0x1D1B20
+    candidate_text_color_dark: 0xE6E1E5
 
 keyboard:
   colors:
-    # 全局中性玻璃底座：高透明度透光基底
-    keyboard_bg_color: 0xCCF8FAFC
-    keyboard_bg_color_dark: 0xCC0F172A
-
-    # 悬浮玻璃按键：浅色 75% 不透明高光白，深色 20% 高光白
-    key_bg_color: 0xBFFFFFFF
-    key_bg_color_dark: 0x33FFFFFF
-
-    # 候选词栏：轻薄水滴光晕
-    candidate_bar_bg_color: 0xB3F8FAFC
-    candidate_bar_bg_color_dark: 0xB30F172A
-
-    # 兼容性中性文字色：高对比度 Slate 灰阶，保证在 6 套方案的毛玻璃上都不撞色且符合 WCAG AA 可读标准
-    key_text_color: 0x0F172A
-    key_text_color_dark: 0xF8FAFC
-    candidate_text_color: 0x0F172A
-    candidate_text_color_dark: 0xF8FAFC
+    keyboard_bg_color: 0xE3E4E8
+    keyboard_bg_color_dark: 0x202020
+    key_bg_color: 0xFFFFFF
+    key_bg_color_dark: 0x4A4A4A
+    candidate_bar_bg_color: 0xE3E4E8
+    candidate_bar_bg_color_dark: 0x202020
+    key_text_color: 0x202124
+    key_text_color_dark: 0xE8EAED
+    candidate_text_color: 0x202124
+    candidate_text_color_dark: 0xE8EAED
 
   key:
     corner_radius: 8
@@ -113,12 +129,188 @@ keyboard:
     enabled: true
     elevation: 2
 
+  # ══════════════ 中文 26 键（小鹤双拼·默认26全键盘）══════════════
   qwerty:
+    button_layout: compact
+    layout:
+      rows:
+        - ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+        - [q, w, e, r, t, y, u, i, o, p]
+        - [a, s, d, f, g, h, j, k, l]
+        - [shift, z, x, c, v, b, n, m, delete]
+        - [mode_change, comma, space, earth, enter]
+    keys:
+      # ── 数字行：点按数字 / 下滑 PC 符号 ──
+      "1": { tap: "1", swipe_down: "!" }
+      "2": { tap: "2", swipe_down: "@" }
+      "3": { tap: "3", swipe_down: "#" }
+      "4": { tap: "4", swipe_down: "$" }
+      "5": { tap: "5", swipe_down: "%" }
+      "6": { tap: "6", swipe_down: "^" }
+      "7": { tap: "7", swipe_down: "&" }
+      "8": { tap: "8", swipe_down: "*" }
+      "9": { tap: "9", swipe_down: "(" }
+      "0": { tap: "0", swipe_down: ")" }
+
+      # ── 第一行：上滑常用中文标点（成对符号只显示左半）/ 下滑小鹤韵母提示 ──
+      q: { tap: "q", swipe_up: { label: "“", action: commit, value: "“”" }, swipe_down: { label: "iu", action: "none", display: "key" }, long_press: { display: "bubble", values: ["q", "Q"] } }
+      w: { tap: "w", swipe_up: { label: "‘", action: commit, value: "‘’" }, swipe_down: { label: "ei", action: "none", display: "key" }, long_press: { display: "bubble", values: ["w", "W"] } }
+      e: { tap: "e", swipe_up: { label: "（", action: commit, value: "（）" }, swipe_down: { label: "e", action: "none", display: "key" }, long_press: { display: "bubble", values: ["e", "E"] } }
+      r: { tap: "r", swipe_up: { label: "【", action: commit, value: "【】" }, swipe_down: { label: "uan", action: "none", display: "key" }, long_press: { display: "bubble", values: ["r", "R"] } }
+      t: { tap: "t", swipe_up: { label: "《", action: commit, value: "《》" }, swipe_down: { label: "ue\nve", action: "none", display: "key" }, long_press: { display: "bubble", values: ["t", "T"] } }
+      y: { tap: "y", swipe_up: { label: "：", action: commit, value: "：" }, swipe_down: { label: "un", action: "none", display: "key" }, long_press: { display: "bubble", values: ["y", "Y"] } }
+      u: { tap: "u", swipe_up: { label: "、", action: commit, value: "、" }, swipe_down: { label: "sh\nu", action: "none", display: "key" }, long_press: { display: "bubble", values: ["u", "U", "×", "÷", "≠", "≈", "±", "°", "‰", "√"] } }
+      i: { tap: "i", swipe_up: { label: "？", action: commit, value: "？" }, swipe_down: { label: "ch\ni", action: "none", display: "key" }, long_press: { display: "bubble", values: ["i", "I"] } }
+      o: { tap: "o", swipe_up: { label: "！", action: commit, value: "！" }, swipe_down: { label: "o\nuo", action: "none", display: "key" }, long_press: { display: "bubble", values: ["o", "O"] } }
+      p: { tap: "p", swipe_up: { label: "/", action: send_rime, value: "/" }, swipe_down: { label: "ie", action: "none", display: "key" }, long_press: { display: "bubble", values: ["p", "P"] } }
+
+      # ── 第二行：上滑常用符号（与第一行不重复）/ 下滑小鹤韵母提示 ──
+      a: { tap: "a", swipe_up: { label: "@", action: commit, value: "@" }, swipe_down: { label: "a", action: "none", display: "key" }, long_press: { display: "bubble", values: ["a", "A"] } }
+      s: { tap: "s", swipe_up: { label: "#", action: commit, value: "#" }, swipe_down: { label: "iong\nong", action: "none", display: "key" }, long_press: { display: "bubble", values: ["s", "S"] } }
+      d: { tap: "d", swipe_up: { label: "¥", action: commit, value: "¥" }, swipe_down: { label: "ai", action: "none", display: "key" }, long_press: { display: "bubble", values: ["d", "D"] } }
+      f: { tap: "f", swipe_up: { label: "；", action: commit, value: "；" }, swipe_down: { label: "en", action: "none", display: "key" }, long_press: { display: "bubble", values: ["f", "F"] } }
+      g: { tap: "g", swipe_up: { label: "…", action: commit, value: "…" }, swipe_down: { label: "eng", action: "none", display: "key" }, long_press: { display: "bubble", values: ["g", "G"] } }
+      h: { tap: "h", swipe_up: { label: "—", action: commit, value: "—" }, swipe_down: { label: "ang", action: "none", display: "key" }, long_press: { display: "bubble", values: ["h", "H"] } }
+      j: { tap: "j", swipe_up: { label: "～", action: commit, value: "～" }, swipe_down: { label: "an", action: "none", display: "key" }, long_press: { display: "bubble", values: ["j", "J"] } }
+      k: { tap: "k", swipe_up: { label: "%", action: commit, value: "%" }, swipe_down: { label: "ing\nuai", action: "none", display: "key" }, long_press: { display: "bubble", values: ["k", "K"] } }
+      l: { tap: "l", swipe_up: { label: "·", action: commit, value: "·" }, swipe_down: { label: "iang\nuang", action: "none", display: "key" }, long_press: { display: "bubble", values: ["l", "L"] } }
+
+      # ── 第三行：上滑补充符号 / 下滑小鹤声母·韵母提示 ──
+      z: { tap: "z", swipe_up: { label: "*", action: commit, value: "*" }, swipe_down: { label: "ou", action: "none", display: "key" }, long_press: { display: "bubble", values: ["z", "Z"] } }
+      x: { tap: "x", swipe_up: { label: "&", action: commit, value: "&" }, swipe_down: { label: "ia\nua", action: "none", display: "key" }, long_press: { display: "bubble", values: ["x", "X"] } }
+      c: { tap: "c", swipe_up: { label: "_", action: commit, value: "_" }, swipe_down: { label: "ao", action: "none", display: "key" }, long_press: { display: "bubble", values: ["c", "C"] } }
+      v: { tap: "v", swipe_up: { label: "+", action: commit, value: "+" }, swipe_down: { label: "zh\nui\nv", action: "none", display: "key" }, long_press: { display: "bubble", values: ["v", "V"] } }
+      b: { tap: "b", swipe_up: { label: "=", action: commit, value: "=" }, swipe_down: { label: "in", action: "none", display: "key" }, long_press: { display: "bubble", values: ["b", "B"] } }
+      n: { tap: "n", swipe_up: { label: "|", action: commit, value: "|" }, swipe_down: { label: "iao", action: "none", display: "key" }, long_press: { display: "bubble", values: ["n", "N"] } }
+      m: { tap: "m", swipe_up: { label: "\\", action: commit, value: "\\" }, swipe_down: { label: "ian", action: "none", display: "key" }, long_press: { display: "bubble", values: ["m", "M"] } }
+
+      # ── 第四行：功能键 ──
+      shift: { width: 1.4, tap: { action: command, value: shift_single }, double_tap: { action: command, value: shift_caps } }
+      delete: { width: 1.4, tap: { action: delete }, long_press: { values: [ { action: delete, repeat: true } ] }, swipe_up: { action: clear_all, label: "上滑清空" }, swipe_down: { action: undo_clear, label: "下滑撤回" } }
+      mode_change: { width: 1.2, tap: { action: command, value: mode_change }, long_press: { display: bubble, values: [ { label: number, action: command, value: mode_change_number }, { label: common_symbol, action: command, value: mode_change_common_symbol } ] } }
+      space: { width: 3, tap: { action: space }, long_press: { values: [ { action: voice } ] } }
+      enter: { width: 1.2, tap: { action: enter } }
+      comma: { tap: { label: "，", value: "," }, swipe_up: { label: "。", value: "." }, long_press: { display: "bubble", values: ["，", "。", "？", "！", "、", "…"] } }
+      earth: { tap: { label: "@language", action: toggle_ascii }, long_press: { display: "bubble", values: [ { label: "选择输入法", action: command, value: show_ime_picker } ] } }
+
+  # ══════════════ 英文 26 键 ══════════════
+  qwerty_en:
+    button_layout: standard
+    layout:
+      rows:
+        - ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+        - [q, w, e, r, t, y, u, i, o, p]
+        - [a, s, d, f, g, h, j, k, l]
+        - [shift, z, x, c, v, b, n, m, delete]
+        - [mode_change, comma, space, earth, enter]
+    keys:
+      # ── 数字行：点按数字 / 下滑 PC 符号 ──
+      "1": { tap: "1", swipe_down: "!" }
+      "2": { tap: "2", swipe_down: "@" }
+      "3": { tap: "3", swipe_down: "#" }
+      "4": { tap: "4", swipe_down: "$" }
+      "5": { tap: "5", swipe_down: "%" }
+      "6": { tap: "6", swipe_down: "^" }
+      "7": { tap: "7", swipe_down: "&" }
+      "8": { tap: "8", swipe_down: "*" }
+      "9": { tap: "9", swipe_down: "(" }
+      "0": { tap: "0", swipe_down: ")" }
+
+      # ── 第一行：上滑 Shift 符号（成对符号只显示左半）──
+      q: { tap: "q", swipe_up: "~", long_press: { display: "bubble", values: ["q", "Q"] } }
+      w: { tap: "w", swipe_up: "_", long_press: { display: "bubble", values: ["w", "W"] } }
+      e: { tap: "e", swipe_up: "+", long_press: { display: "bubble", values: ["e", "E"] } }
+      r: { tap: "r", swipe_up: { label: "{", action: commit, value: "{}" }, long_press: { display: "bubble", values: ["r", "R"] } }
+      t: { tap: "t", swipe_up: { label: "<", action: commit, value: "<>" }, long_press: { display: "bubble", values: ["t", "T"] } }
+      y: { tap: "y", swipe_up: { label: '"', action: commit, value: '""' }, long_press: { display: "bubble", values: ["y", "Y"] } }
+      u: { tap: "u", swipe_up: ":", long_press: { display: "bubble", values: ["u", "U", "×", "÷", "≠", "≈", "±", "°", "‰", "√"] } }
+      i: { tap: "i", swipe_up: "?", long_press: { display: "bubble", values: ["i", "I"] } }
+      o: { tap: "o", swipe_up: "|", long_press: { display: "bubble", values: ["o", "O"] } }
+      p: { tap: "p", swipe_up: "/", long_press: { display: "bubble", values: ["p", "P"] } }
+
+      # ── 第二行：上滑符号 / 下滑编辑快捷键 ──
+      a: { tap: "a", swipe_up: "\\", swipe_down: { label: "All", action: select_all, display: "key" }, long_press: { display: "bubble", values: ["a", "A"] } }
+      s: { tap: "s", swipe_up: ";", swipe_down: { label: "Clr", action: command, value: clear_composition, display: "key" }, long_press: { display: "bubble", values: ["s", "S"] } }
+      d: { tap: "d", swipe_up: "'", swipe_down: { label: "↻", action: repeat, display: "key" }, long_press: { display: "bubble", values: ["d", "D"] } }
+      f: { tap: "f", swipe_up: { label: "[", action: commit, value: "[]" }, long_press: { display: "bubble", values: ["f", "F"] } }
+      g: { tap: "g", swipe_up: { label: "(", action: commit, value: "()" }, long_press: { display: "bubble", values: ["g", "G"] } }
+      h: { tap: "h", swipe_up: "-", long_press: { display: "bubble", values: ["h", "H"] } }
+      j: { tap: "j", swipe_up: "=", long_press: { display: "bubble", values: ["j", "J"] } }
+      k: { tap: "k", swipe_up: ",", long_press: { display: "bubble", values: ["k", "K"] } }
+      l: { tap: "l", swipe_up: ".", long_press: { display: "bubble", values: ["l", "L"] } }
+
+      # ── 第三行：下滑编辑快捷键，标签用英文缩写或符号 ──
+      z: { tap: "z", swipe_down: { label: "↶", action: undo, display: "key" }, long_press: { display: "bubble", values: ["z", "Z"] } }
+      x: { tap: "x", swipe_down: { label: "✂", action: cut, display: "key" }, long_press: { display: "bubble", values: ["x", "X"] } }
+      c: { tap: "c", swipe_down: { label: "⧉", action: copy, display: "key" }, long_press: { display: "bubble", values: ["c", "C"] } }
+      v: { tap: "v", swipe_down: { label: "Pst", action: paste, display: "key" }, long_press: { display: "bubble", values: ["v", "V"] } }
+      b: { tap: "b", swipe_down: { label: "⏎", action: newline, display: "key" }, long_press: { display: "bubble", values: ["b", "B"] } }
+      n: { tap: "n", swipe_down: { label: "⇤", action: line_start, display: "key" }, long_press: { display: "bubble", values: ["n", "N"] } }
+      m: { tap: "m", swipe_down: { label: "⇥", action: line_end, display: "key" }, long_press: { display: "bubble", values: ["m", "M"] } }
+
+      # ── 第四行：功能键 ──
+      shift: { width: 1.4, tap: { action: command, value: shift_single }, double_tap: { action: command, value: shift_caps } }
+      delete: { width: 1.4, tap: { action: delete }, long_press: { values: [ { action: delete, repeat: true } ] }, swipe_up: { action: clear_all, label: "上滑清空" }, swipe_down: { action: undo_clear, label: "下滑撤回" } }
+      mode_change: { width: 1.2, tap: { action: command, value: mode_change }, long_press: { display: bubble, values: [ { label: number, action: command, value: mode_change_number }, { label: common_symbol, action: command, value: mode_change_common_symbol } ] } }
+      space: { width: 3, tap: { action: space }, long_press: { values: [ { action: voice } ] } }
+      enter: { width: 1.2, tap: { action: enter } }
+      comma: { tap: { label: ",", value: "," }, swipe_up: { label: ".", value: "." } }
+      earth: { tap: { label: "@language", action: toggle_ascii }, long_press: { display: "bubble", values: [ { label: "选择输入法", action: command, value: show_ime_picker } ] } }
+
+  # ── 合并键布局（14/17/18 键）──
+  # rows 支持子数组：[[q, w], [e, r], ...] 表示 q/w 合并在同一个键，每行键数变少键自然更宽（行内等宽）。
+  # 合并键在 keys 里的 id 为组内字母拼接（qw、er...），tap 的 value 固定为组内第一个字母（代表字母），
+  # Rime 侧由方案的拼写运算（derive + xlit）靠词库消歧。
+  # swipe_up：前 10 个键按行序输出数字 1-0，其余键沿用 26 键同字母的符号习惯；
+  # long_press 气泡保留组内字母的精确输入作为辅助。
+  #
+  # schemas 声明使用此布局的方案（schema_id），前端据此在方案切换时加载对应 section，
+  # 新增合并键布局只需加 section + 声明 schemas（可写入 xime.custom.yaml），无需改代码。
+  # 一个 section 可被多个方案复用；未声明 schemas 的方案一律使用全键盘（26 键）。
+  #
+  # 拼音 14 键：qw/er/ty/ui/op、as/df/gh/jk/l、zx/cv/bn/m（对应方案 pinyin_14jian）
+  qwerty_14:
+      schemas: [rime_frost_double_pinyin_flypy_14]
+      button_layout: compact
+      layout:
+        rows:
+          - [[q, w], [e, r], [t, y], u, i, [o, p]]
+          - [[a, s], [d, f], [g, h], [j, k], [l, m]]
+          - [shift, [z, x], [c, v], [b, n], delete]
+          - [mode_change, comma, space, earth, enter]
+      button_layout: compact
+      keys:
+        qw: { tap: { label: "qw", value: "q" }, swipe_up: "1", swipe_down: { label: "iu\nei", action: "none", display: "key" }, long_press: { display: "bubble", values: ["q", "Q", "w", "W"] } }
+        er: { tap: { label: "er", value: "e" }, swipe_up: "2", swipe_down: { label: "e\nuan", action: "none", display: "key" }, long_press: { display: "bubble", values: ["e", "E", "r", "R"] } }
+        ty: { tap: { label: "ty", value: "t" }, swipe_up: "3", swipe_down: { label: "ue\nve\nun", action: "none", display: "key" }, long_press: { display: "bubble", values: ["t", "T", "y", "Y"] } }
+        u:  { tap: { label: "u", value: "u" }, swipe_up: "4", swipe_down: { label: "sh\nu", action: "none", display: "key" }, long_press: { display: "bubble", values: ["u", "U"] } }
+        i:  { tap: { label: "i", value: "i" }, swipe_up: "5", swipe_down: { label: "ch\ni", action: "none", display: "key" }, long_press: { display: "bubble", values: ["i", "I"] } }
+        op: { tap: { label: "op", value: "o" }, swipe_up: "6", swipe_down: { label: "o\nuo\nie", action: "none", display: "key" }, long_press: { display: "bubble", values: ["o", "O", "p", "P"] } }
+        as: { tap: { label: "as", value: "a" }, swipe_up: "7", swipe_down: { label: "a\niong\nong", action: "none", display: "key" }, long_press: { display: "bubble", values: ["a", "A", "s", "S"] } }
+        df: { tap: { label: "df", value: "d" }, swipe_up: "8", swipe_down: { label: "ai\nen", action: "none", display: "key" }, long_press: { display: "bubble", values: ["d", "D", "f", "F"] } }
+        gh: { tap: { label: "gh", value: "g" }, swipe_up: "9", swipe_down: { label: "eng\nang", action: "none", display: "key" }, long_press: { display: "bubble", values: ["g", "G", "h", "H"] } }
+        jk: { tap: { label: "jk", value: "j" }, swipe_up: "0", swipe_down: { label: "an\ning\nuai", action: "none", display: "key" }, long_press: { display: "bubble", values: ["j", "J", "k", "K"] } }
+        lm: { tap: { label: "lm", value: "m" }, swipe_up: "-", swipe_down: { label: "ian\niang\nuang", action: "none", display: "key" }, long_press: { display: "bubble", values: ["m", "M", "l", "L"] } }
+        zx: { tap: { label: "zx", value: "z" }, swipe_up: ")", swipe_down: { label: "ou\nia\nua", action: "none", display: "key" }, long_press: { display: "bubble", values: ["z", "Z", "x", "X"] } }
+        cv: { tap: { label: "cv", value: "v" }, swipe_up: "?", swipe_down: { label: "zh\nui\nv\nao", action: "none", display: "key" }, long_press: { display: "bubble", values: ["v", "V", "c", "C"] } }
+        bn: { tap: { label: "bn", value: "b" }, swipe_up: "!", swipe_down: { label: "in\niao", action: "none", display: "key" }, long_press: { display: "bubble", values: ["b", "B", "n", "N"] } }
+        shift: { tap: { action: command, value: shift_single }, double_tap: { action: command, value: shift_caps } }
+        delete: { tap: { action: delete }, long_press: { values: [ { action: delete, repeat: true } ] }, swipe_up: { action: clear_all, label: "上滑清空" }, swipe_down: { action: undo_clear, label: "下滑撤回" } }
+        mode_change: { tap: { action: command, value: mode_change }, long_press: { display: bubble, values: [ { label: number, action: command, value: mode_change_number }, { label: common_symbol, action: command, value: mode_change_common_symbol } ] } }
+        space: { tap: { action: space }, long_press: { values: [ { action: voice } ] } }
+        enter: { tap: { action: enter } }
+        comma: { tap: { label: ",", value: "," }, swipe_up: { label: ".", value: "." } }
+        earth: { tap: { label: "@language", action: toggle_ascii }, long_press: { display: "bubble", values: [ { label: "选择输入法", action: command, value: show_ime_picker } ] } }
+
+  qwerty_17:
+    schemas: [rime_frost_double_pinyin_flypy_17]
+    button_layout: compact
     layout:
       rows:
         - [[q, w], [e, r], [t, y], u, i, [o, p]]
         - [[a, s], [d, f], g, h, [j, k], l]
-        - [[z, x], c, v, [b, n], m]
+        - [shift, [z, x], c, v, [b, n], m, delete]
+        - [mode_change, comma, space, earth, enter]
     button_layout: compact
     keys:
       # swipe_up 数字/符号按行序排布：上排 1-0、中排符号、下排符号
@@ -139,42 +331,55 @@ keyboard:
       v:  { tap: { label: "v", value: "v" }, swipe_up: { label: "?", value: "?" }, swipe_down: { label: "zh\nui\nv", action: "none", display: "key" }, long_press: { display: "bubble", values: ["v", "V"] } }
       bn: { tap: { label: "bn", value: "b" }, swipe_up: { label: "!", value: "!" }, swipe_down: { label: "in\niao", action: "none", display: "key" }, long_press: { display: "bubble", values: ["b", "B", "n", "N"] } }
       m:  { tap: { label: "m", value: "m" }, swipe_up: { label: "#", value: "#" }, swipe_down: { label: "ian", action: "none", display: "key" }, long_press: { display: "bubble", values: ["m", "M"] } }
-      "'": { tap: { label: "，", value: "," }, swipe_up: { label: "。", value: "." }, long_press: { display: "bubble", values: [",", "."] } }
-      earth: { 
-        tap: { label: "@language", action: "toggle_ascii" }, 
-        long_press: { display: "bubble", values: [{ label: "选择输入法", action: "command", value: "show_ime_picker" }] } 
-      }
+      shift: { tap: { action: command, value: shift_single }, double_tap: { action: command, value: shift_caps } }
+      delete: { tap: { action: delete }, long_press: { values: [ { action: delete, repeat: true } ] }, swipe_up: { action: clear_all, label: "上滑清空" }, swipe_down: { action: undo_clear, label: "下滑撤回" } }
+      mode_change: { tap: { action: command, value: mode_change }, long_press: { display: bubble, values: [ { label: number, action: command, value: mode_change_number }, { label: common_symbol, action: command, value: mode_change_common_symbol } ] } }
+      space: { tap: { action: space }, long_press: { values: [ { action: voice } ] } }
+      enter: { tap: { action: enter } }
+      comma: { tap: { label: ",", value: "," }, swipe_up: { label: ".", value: "." } }
+      earth: { tap: { label: "@language", action: toggle_ascii }, long_press: { display: "bubble", values: [ { label: "选择输入法", action: command, value: show_ime_picker } ] } }
 
-  qwerty_en:
-    button_layout: standard
+  qwerty_18:
+    schemas: [rime_frost_double_pinyin_flypy_18]
+    button_layout: compact
+    layout:
+      rows:
+        - [[q, w], [e, r], [t, y], u, i, [o, p]]
+        - [[a, s], [d, f], g, h, [j, k], l]
+        - [shift, [z, x], c, v, b, n, m, delete]
+        - [mode_change, comma, space, earth, enter]
+    button_layout: compact
     keys:
-      q: { tap: "q", swipe_up: "1", swipe_down: { label: "!", action: "commit", value: "!", display: "key" }, long_press: { display: "bubble", values: ["q", "Q"] } }
-      w: { tap: "w", swipe_up: "2", swipe_down: { label: "@", action: "commit", value: "@", display: "key" }, long_press: { display: "bubble", values: ["w", "W"] } }
-      e: { tap: "e", swipe_up: "3", swipe_down: { label: "#", action: "commit", value: "#", display: "key" }, long_press: { display: "bubble", values: ["e", "E"] } }
-      r: { tap: "r", swipe_up: "4", swipe_down: { label: "$", action: "commit", value: "$", display: "key" }, long_press: { display: "bubble", values: ["r", "R"] } }
-      t: { tap: "t", swipe_up: "5", swipe_down: { label: "%", action: "commit", value: "%", display: "key" }, long_press: { display: "bubble", values: ["t", "T"] } }
-      y: { tap: "y", swipe_up: "6", swipe_down: { label: "^", action: "commit", value: "^", display: "key" }, long_press: { display: "bubble", values: ["y", "Y"] } }
-      u: { tap: "u", swipe_up: "7", swipe_down: { label: "&", action: "commit", value: "&", display: "key" }, long_press: { display: "bubble", values: ["u", "U"] } }
-      i: { tap: "i", swipe_up: "8", swipe_down: { label: "*", action: "commit", value: "*", display: "key" }, long_press: { display: "bubble", values: ["i", "I"] } }
-      o: { tap: "o", swipe_up: "9", swipe_down: { label: "(", action: "commit", value: "(", display: "key" }, long_press: { display: "bubble", values: ["o", "O"] } }
-      p: { tap: "p", swipe_up: "0", swipe_down: { label: ")", action: "commit", value: ")", display: "key" }, long_press: { display: "bubble", values: ["p", "P"] } }
+      # swipe_up 数字/符号按行序排布：上排 1-0、中排符号、下排符号
+      qw: { tap: { label: "qw", value: "q" }, swipe_up: "1", swipe_down: { label: "iu\nei", action: "none", display: "key" }, long_press: { display: "bubble", values: ["q", "Q", "w", "W"] } }
+      er: { tap: { label: "er", value: "e" }, swipe_up: "2", swipe_down: { label: "e\nuan", action: "none", display: "key" }, long_press: { display: "bubble", values: ["e", "E", "r", "R"] } }
+      ty: { tap: { label: "ty", value: "t" }, swipe_up: "3", swipe_down: { label: "ue\nve\nun", action: "none", display: "key" }, long_press: { display: "bubble", values: ["t", "T", "y", "Y"] } }
+      u:  { tap: { label: "u", value: "u" }, swipe_up: "4", swipe_down: { label: "sh\nu", action: "none", display: "key" }, long_press: { display: "bubble", values: ["u", "U"] } }
+      i:  { tap: { label: "i", value: "i" }, swipe_up: "5", swipe_down: { label: "ch\ni", action: "none", display: "key" }, long_press: { display: "bubble", values: ["i", "I"] } }
+      op: { tap: { label: "op", value: "o" }, swipe_up: "6", swipe_down: { label: "o\nuo\nie", action: "none", display: "key" }, long_press: { display: "bubble", values: ["o", "O", "p", "P"] } }
+      as: { tap: { label: "as", value: "a" }, swipe_up: "7", swipe_down: { label: "a\niong\nong", action: "none", display: "key" }, long_press: { display: "bubble", values: ["a", "A", "s", "S"] } }
+      df: { tap: { label: "df", value: "d" }, swipe_up: "8", swipe_down: { label: "ai\nen", action: "none", display: "key" }, long_press: { display: "bubble", values: ["d", "D", "f", "F"] } }
+      g:  { tap: { label: "g", value: "g" }, swipe_up: "9", swipe_down: { label: "eng", action: "none", display: "key" }, long_press: { display: "bubble", values: ["g", "G"] } }
+      h:  { tap: { label: "h", value: "h" }, swipe_up: "0", swipe_down: { label: "ang", action: "none", display: "key" }, long_press: { display: "bubble", values: ["h", "H"] } }
+      jk: { tap: { label: "jk", value: "j" }, swipe_up: { label: "-", value: "-" }, swipe_down: { label: "an\ning\nuai", action: "none", display: "key" }, long_press: { display: "bubble", values: ["j", "J", "k", "K"] } }
+      l:  { tap: { label: "l", value: "l" }, swipe_up: { label: "*", value: "*" }, swipe_down: { label: "iang\nuang", action: "none", display: "key" }, long_press: { display: "bubble", values: ["l", "L"] } }
+      zx: { tap: { label: "zx", value: "z" }, swipe_up: { label: ")", value: ")" }, swipe_down: { label: "ou\nia\nua", action: "none", display: "key" }, long_press: { display: "bubble", values: ["z", "Z", "x", "X"] } }
+      c:  { tap: { label: "c", value: "c" }, swipe_up: { label: "@", value: "@" }, swipe_down: { label: "ao", action: "none", display: "key" }, long_press: { display: "bubble", values: ["c", "C"] } }
+      v:  { tap: { label: "v", value: "v" }, swipe_up: { label: "?", value: "?" }, swipe_down: { label: "zh\nui\nv", action: "none", display: "key" }, long_press: { display: "bubble", values: ["v", "V"] } }
+      b: { tap: { label: "b", value: "b" }, swipe_up: { label: "!", value: "!" }, swipe_down: { label: "in", action: "none", display: "key" }, long_press: { display: "bubble", values: ["b", "B"] } }
+      n: { tap: { label: "n", value: "n" }, swipe_up: { label: "/", value: "/" }, swipe_down: { label: "iao", action: "none", display: "key" }, long_press: { display: "bubble", values: ["n", "N"] } }
+      m: { tap: { label: "m", value: "m" }, swipe_up: { label: "#", value: "#" }, swipe_down: { label: "ian", action: "none", display: "key" }, long_press: { display: "bubble", values: ["m", "M"] } }
+      shift: { tap: { action: command, value: shift_single }, double_tap: { action: command, value: shift_caps } }
+      delete: { tap: { action: delete }, long_press: { values: [ { action: delete, repeat: true } ] }, swipe_up: { action: clear_all, label: "上滑清空" }, swipe_down: { action: undo_clear, label: "下滑撤回" } }
+      mode_change: { tap: { action: command, value: mode_change }, long_press: { display: bubble, values: [ { label: number, action: command, value: mode_change_number }, { label: common_symbol, action: command, value: mode_change_common_symbol } ] } }
+      space: { tap: { action: space }, long_press: { values: [ { action: voice } ] } }
+      enter: { tap: { action: enter } }
+      comma: { tap: { label: ",", value: "," }, swipe_up: { label: ".", value: "." } }
+      earth: { tap: { label: "@language", action: toggle_ascii }, long_press: { display: "bubble", values: [ { label: "选择输入法", action: command, value: show_ime_picker } ] } }
 
-      a: { tap: "a", swipe_up: "~", swipe_down: { label: "全选", action: "select_all", display: "key" }, long_press: { display: "bubble", values: ["a", "A"] } }
-      s: { tap: "s", swipe_up: "/", swipe_down: { label: "清空", action: "command", value: "clear_composition", display: "key" }, long_press: { display: "bubble", values: ["s", "S"] } }
-      d: { tap: "d", swipe_up: ":", swipe_down: { label: "重试", action: "repeat", display: "key" }, long_press: { display: "bubble", values: ["d", "D"] } }
-      f: { tap: "f", swipe_up: ";", swipe_down: { label: ";", action: "commit", value: ";", display: "key" }, long_press: { display: "bubble", values: ["f", "F"] } }
-      g: { tap: "g", swipe_up: "\"", swipe_down: { label: "\"", action: "commit", value: "\"", display: "key" }, long_press: { display: "bubble", values: ["g", "G"] } }
-      h: { tap: "h", swipe_up: "'", swipe_down: { label: "'", action: "commit", value: "'", display: "key" }, long_press: { display: "bubble", values: ["h", "H"] } }
-      j: { tap: "j", swipe_up: "-", swipe_down: { label: "-", action: "commit", value: "-", display: "key" }, long_press: { display: "bubble", values: ["j", "J"] } }
-      k: { tap: "k", swipe_up: "(", swipe_down: { label: "[", action: "commit", value: "[", display: "key" }, long_press: { display: "bubble", values: ["k", "K"] } }
-      l: { tap: "l", swipe_up: ")", swipe_down: { label: "]", action: "commit", value: "]", display: "key" }, long_press: { display: "bubble", values: ["l", "L"] } }
 
-      z: { tap: "z", swipe_up: "[", swipe_down: { label: "撤销", action: "undo", display: "key" }, long_press: { display: "bubble", values: ["z", "Z"] } }
-      x: { tap: "x", swipe_up: "]", swipe_down: { label: "剪切", action: "cut", display: "key" }, long_press: { display: "bubble", values: ["x", "X"] } }
-      c: { tap: "c", swipe_up: "{", swipe_down: { label: "复制", action: "copy", display: "key" }, long_press: { display: "bubble", values: ["c", "C", "ç"] } }
-      v: { tap: "v", swipe_up: "}", swipe_down: { label: "粘贴", action: "paste", display: "key" }, long_press: { display: "bubble", values: ["v", "V"] } }
-      b: { tap: "b", swipe_up: "_", swipe_down: { label: "换行", action: "commit", value: "\n", display: "key" }, long_press: { display: "bubble", values: ["b", "B"] } }
-      n: { tap: "n", swipe_up: "<", swipe_down: { label: "段首", action: "line_start", display: "key" }, long_press: { display: "bubble", values: ["n", "N", "ñ"] } }
-      m: { tap: "m", swipe_up: ">", swipe_down: { label: "段尾", action: "line_end", display: "key" }, long_press: { display: "bubble", values: ["m", "M"] } }
-      "'": { tap: { label: ",", value: "," }, swipe_up: { label: ".", value: "." } }
-      earth: { tap: { label: "@language", action: "toggle_ascii" } }
+
+
+
+
+
