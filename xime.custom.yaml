@@ -1,6 +1,6 @@
 metadata:
   app_name: Xime
-  app_version: ">=2.6.0"
+  app_version: ">=3.0.0"
   platform: android
   config_version: 1
   generator: "Xime Config Generator"
