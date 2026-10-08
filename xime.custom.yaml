@@ -278,7 +278,6 @@ keyboard:
           - [[a, s], [d, f], [g, h], [j, k], [l, m]]
           - [shift, [z, x], [c, v], [b, n], delete]
           - [mode_change, comma, space, earth, enter]
-      button_layout: compact
       keys:
         qw: { tap: { label: "qw", value: "q" }, swipe_up: "1", swipe_down: { label: "iu\nei", action: "none", display: "key" }, long_press: { display: "bubble", values: ["q", "Q", "w", "W"] } }
         er: { tap: { label: "er", value: "e" }, swipe_up: "2", swipe_down: { label: "e\nuan", action: "none", display: "key" }, long_press: { display: "bubble", values: ["e", "E", "r", "R"] } }
@@ -311,7 +310,6 @@ keyboard:
         - [[a, s], [d, f], g, h, [j, k], l]
         - [shift, [z, x], c, v, [b, n], m, delete]
         - [mode_change, comma, space, earth, enter]
-    button_layout: compact
     keys:
       # swipe_up 数字/符号按行序排布：上排 1-0、中排符号、下排符号
       qw: { tap: { label: "qw", value: "q" }, swipe_up: "1", swipe_down: { label: "iu\nei", action: "none", display: "key" }, long_press: { display: "bubble", values: ["q", "Q", "w", "W"] } }
@@ -348,7 +346,6 @@ keyboard:
         - [[a, s], [d, f], g, h, [j, k], l]
         - [shift, [z, x], c, v, b, n, m, delete]
         - [mode_change, comma, space, earth, enter]
-    button_layout: compact
     keys:
       # swipe_up 数字/符号按行序排布：上排 1-0、中排符号、下排符号
       qw: { tap: { label: "qw", value: "q" }, swipe_up: "1", swipe_down: { label: "iu\nei", action: "none", display: "key" }, long_press: { display: "bubble", values: ["q", "Q", "w", "W"] } }
